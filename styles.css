@@ -221,7 +221,21 @@ section.active {
     text-align: center;
 }
 
-.project-btn-grp{
+.project-details-info {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+.project-details-info::marker {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: purple;
+}
+
+.project-btn-grp {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
