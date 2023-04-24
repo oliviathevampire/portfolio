@@ -1,3 +1,21 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+main > section {
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+main > section.active {
+    opacity: 1;
+    z-index: 8;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -275,6 +293,7 @@ section.active {
     top: 0;
     opacity: 0;
     transition: 1s;
+    transition-property: initial;
 }
 
 .about{

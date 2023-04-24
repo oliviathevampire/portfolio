@@ -10,10 +10,8 @@ links.forEach((link, i) => {
             link.classList.add('active');
             sections[activeLink].classList.remove('active');
 
-            setTimeout(() => {
-                activeLink = i;
-                sections[i].classList.add('active');
-            }, 1000);
+            activeLink = i;
+            sections[i].classList.add('active');
         }
     })
 })
