@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -17,209 +16,18 @@
 <body>
     <nav class="navbar">
         <ul class="link-group">
-            <li class="link active"><a href="#">home</a></li>
-            <li class="link"><a href="#">projects</a></li>
-            <li class="link"><a href="#">about</a></li>
-            <li class="link"><a href="#">skills</a></li>
-            <li class="link"><a href="#">timeline</a></li>
+            <li class="link"><a href="home" id="home_button">home</a></li>
+            <li class="link"><a href="projects" id="projects_button">projects</a></li>
+            <li class="link"><a href="about" id="about_button">about</a></li>
+            <li class="link"><a href="skills" id="skills_button">skills</a></li>
+            <li class="link"><a href="timeline" id="timeline_button">timeline</a></li>
         </ul>
     </nav>
-    <main>
-        <section class="home-section active">
-            <h1 class="hero-heading">hello, i am <br> OiviaTheVampire</h1>
-            <img src="img/image.png" class="home-img" alt="">
-        </section>
-        <!-- project section -->
-        <section class="project-section">
-            <h1 class="project-heading">my games</h1>
-            <div class="project-container">
-                <div class="project-card">
-                    <img src="img/Screenshot_4.png" class="project-img" alt="">
-                    <div class="project-content">
-                        <h1 class="project-title-smaller">Procedural Map Generation</h1>
-                        <p class="project-info">First game I made when starting to study game development. A bit too much work when first starting.<br><br></p>
-                        <div class="project-btn">
-                            <button class="project-btn github" style="padding-left: 10em;"><a href="procedural-map-generation.html" style="text-decoration: none; color: white;">learn more...</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="img/MainMenu.png" class="project-img" alt="">
-                    <div class="project-content">
-                        <h1 class="project-title-smaller">Realms of Shadow</h1>
-                        <p class="project-info">My main project while studying game development, mainly to learn how to use Unity and all it's 2D features</p>
-                        <div class="project-btn">
-                            <button class="project-btn github" style="padding-left: 10em;"><a href="realms-of-shadow.html" style="text-decoration: none; color: white;">learn more...</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <h1 class="project-heading">my game jam games</h1>
-            <div class="project-container">
-                <div class="project-card">
-                    <img src="img/MainMenu2.png" class="project-img" alt="">
-                    <div class="project-content">
-                        <h1 class="project-title">Snagwire</h1>
-                        <p class="project-info">A little game I made for GGJ 23.<br><br><br></p>
-                        <div class="project-btn">
-                            <button class="project-btn github" style="padding-left: 10em;"><a href="snagwire.html" style="text-decoration: none; color: white;">learn more...</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <h1 class="project-heading">my minecraft mods</h1>
-            <div class="project-container">
-                <div class="project-card">
-                    <img src="img/raa_icon.png" class="project-img" alt="">
-                    <div class="project-content">
-                        <h1 class="project-title-smaller">Randomly Adding Anything</h1>
-                        <p class="project-info">Adds randomly generated materials and dimensions per world<br><br><br></p>
-                        <div class="project-btn">
-                            <button class="project-btn github" style="padding-left: 10em;"><a href="" style="text-decoration: none; color: white;">learn more...</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="img/o_icon.png" class="project-img" alt="">
-                    <div class="project-content">
-                        <h1 class="project-title-smaller">Obsidian</h1>
-                        <p class="project-info">Mod which allows to add new content through something called content packs.<br><br><br></p>
-                        <div class="project-btn">
-                            <button class="project-btn github" style="padding-left: 10em;"><a href="" style="text-decoration: none; color: white;">learn more...</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- about section -->
-        <section class="about-section">
-            <h1 class="heading">about me</h1>
-            <div class="about">
-                <div class="about-img-container">
-                    <img src="img/image.png" class="about-img" alt="">
-                    <button class="download-cv-btn">download cv</button>
-                </div>
-                <ul class="about-info">
-                    <h2>How I Started With Programming</h2>
-                    <li>Way back in 2016 or maybe earlier I started to get interested in coding by first doing web development and then I started on a local coding club for young people to learn coding, and to help eachother learn more which was super fun.</li>
-                    <li>Then I started doing Minecraft modding possibly not long after I started with web-dev which is how I learned Java and have been doing Minecraft modding since 2016 and up until now.</li>
-                    <li>In August 2022 I started studying Game Development at Bjerkely Folk Highschool, which was super interesting. Learned how to do coding in Unity, how to do art, music and a bit more.</li>
-                    <li>Before I started at Bjerkely tho, I had worked a tiny bit with Godot Engine and a super tiny bit with Unity. But learned way more about Unity when started studying game development.</li>
-                    <br>
-                    <h2>Speaking Languages I know</h2>
-                    <li>Norwegian is my mothertounge so I'm fluent in it.</li>
-                    <li>Pretty fluent in english</li>
-                    <li>Know a little bit of Swedish and tinyyyyy bit of Danish</li>
-                    <br>
-                    <li>Located in Norway</li>
-                    <br>
-                    <h2>Socials</h2>
-                    <li id="myText" onclick="copyDiscordUsername()">Discord: Janetyqua#6669</li>
-                    <li><a href="https://www.instagram.com/oliviathevampire/" style="text-decoration: none; color: white;">Instagram</a></li>
-                    <!-- <li><a href="https://www.linkedin.com/in/sindre-fagerheim-4ba125262/" style="text-decoration: none; color: white;">Linkedin (Irl Name)</a></li> -->
-                    <li><a href="https://www.github.com/oliviathevampire/" style="text-decoration: none; color: white;">GitHub</a></li>
-                    <li><a href="https://vampire-studios.itch.io/" style="text-decoration: none; color: white;">itch.io</a></li>
-                    <li><a href="mailto:sindrefagerheim@outlook.com" style="text-decoration: none; color: white;">Email</a></li>
-                </ul>
-            </div>
-        </section>
-        <!-- skills -->
-        <section class="skill-section">
-            <h1 class="heading">skills</h1>
-            <div class="skills-container">
-                <h1>Programming Languages</h1>
-                <div class="skill-card">
-                    <img src="img/html.png" class="skill-img" alt="">
-                    <h1 class="skill-name">HTML</h1>
-                </div>
-                <div class="skill-card">
-                    <img src="img/css.png" class="skill-img" alt="">
-                    <h1 class="skill-name">CSS</h1>
-                </div>
-                <div class="skill-card">
-                    <img src="img/js.png" class="skill-img" alt="">
-                    <h1 class="skill-name">JS</h1>
-                </div>
-                <div class="skill-card">
-                    <img src="img/java.png" class="skill-img" alt="">
-                    <h1 class="skill-name">Java</h1>
-                </div>
-                <div class="skill-card">
-                    <img src="img/c_sharp.png" class="skill-img" alt="">
-                    <h1 class="skill-name">C#</h1>
-                </div>
-
-                <h1>Engines/Framework</h1>
-                <div class="skill-card">
-                    <img src="img/unity.png" class="skill-img" alt="">
-                    <h1 class="skill-name">Unity</h1>
-                </div>
-                <div class="skill-card">
-                    <img src="img/node_js.png" class="skill-img" alt="">
-                    <h1 class="skill-name">Node.Js</h1>
-                </div>
-
-                <h1>Tools</h1>
-                <div class="skill-card">
-                    <img src="img/github.png" class="skill-img" alt="">
-                    <!-- <img src="img/git.png" class="skill-img" alt=""> -->
-                    <h1 class="skill-name">Git & GitHub</h1>
-                </div>
-                <div class="skill-card">
-                    <img src="img/intellij-idea.png" class="skill-img" alt="">
-                    <h1 class="skill-name">Intellij Idea</h1>
-                </div>
-                <div class="skill-card">
-                    <img src="img/rider.png" class="skill-img" alt="">
-                    <h1 class="skill-name">Rider</h1>
-                </div>
-                <div class="skill-card">
-                    <img src="img/trello.png" class="skill-img" alt="">
-                    <h1 class="skill-name">Trello</h1>
-                </div>
-                <div class="skill-card">
-                    <img src="img/aseprite.png" class="skill-img" alt="">
-                    <h1 class="skill-name">Aseprite</h1>
-                </div>
-            </div>
-        </section>
-        <!-- timeline -->
-        <section class="timeline">
-            <h1 class="heading">education and experience</h1>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">August of 2018</h1>
-                    <p class="card-detail">Started studying ICT</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">1st of October 2019</h1>
-                    <p class="card-detail">Started 2 years as an ICT apprentice</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">August of 2022</h1>
-                    <p class="card-detail">Started studying Game Development</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">3rd to 5th February 2023</h1>
-                    <p class="card-detail">First game jam ever at, GGJ 23 at Hamar</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">13 - 16 April 2023</h1>
-                    <p class="card-detail">First far away game jam ever at, Nordic Game Jam 2023 in Denmark</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div id="screen"></div>
+    <!-- Import JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Import main JS -->
+    <script src="app.js"></script>
     <script>
         let text = document.getElementById('myText').innerHTML;
         const copyDiscordUsername = async () => {
@@ -230,6 +38,6 @@
             console.error('Failed to copy: ', err);
           }
         }
-      </script>
+    </script>
 </body>
 </html>

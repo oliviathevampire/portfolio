@@ -1,17 +1,11 @@
-const links = document.querySelectorAll('.link');
-const sections = document.querySelectorAll('section');
+$(document).ready(function(){
+    $("#screen").load("home.html")
 
-let activeLink = 0;
-
-links.forEach((link, i) => {
-    link.addEventListener('click', () => {
-        if(activeLink != i){
-            links[activeLink].classList.remove('active');
-            link.classList.add('active');
-            sections[activeLink].classList.remove('active');
-
-            activeLink = i;
-            sections[i].classList.add('active');
-        }
-    })
-})
+    $(document).on("click", 'a', function(event) { 
+        let href = event.target.pathname
+        console.log(href)
+        $("#screen").load(`${href.substr(1)}.html`)
+        window.history.replaceState({}, "", href)
+        event.preventDefault()
+    });
+});
