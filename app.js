@@ -4,6 +4,7 @@ $(document).ready(function(){
     $(document).on("click", 'a', function(event) { 
         let href = event.target.pathname
         console.log(href)
+        
         $("#screen").load(`${href.substr(1)}.html`)
         window.history.replaceState({}, "", href)
         event.preventDefault()
